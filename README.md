@@ -82,12 +82,14 @@ setup_swagger_ui_theme(
 ---
 
 ## Screenshots
+### Light Mode
 ![light-theme](screenshots/light-theme.png)
 ![light-theme-2](screenshots/light-theme-2.png)
+---
+### Dark Mode
 ![dark-theme](screenshots/dark-theme.png)
 ![dark-theme-2](screenshots/dark-theme-2.png)
 ---
-
 ## Running the Demo / Test Application
 
 To run the demo/test application, follow these steps:
