@@ -1,0 +1,1 @@
+recursive-include fastapi_swagger_ui_theme/static *

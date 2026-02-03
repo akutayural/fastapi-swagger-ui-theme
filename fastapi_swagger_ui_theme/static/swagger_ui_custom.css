@@ -1,0 +1,32 @@
+/* === COMMON (light + dark) layout fixes === */
+
+.swagger-ui .info {
+  margin: 28px 0 30px !important;
+}
+
+/* Title + toggle row */
+.swagger-ui .info hgroup.main {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 14px !important;
+  margin-bottom: 6px !important;
+}
+
+/* Toggle container */
+.swagger-ui .swagger-ui-toggle-slot {
+  margin-left: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+/* OpenAPI link position */
+.swagger-ui .info a.link {
+  display: inline-block;
+  margin-top: 2px !important;
+}
+
+/* Description spacing */
+.swagger-ui .info__description {
+  margin-top: 6px !important;
+}

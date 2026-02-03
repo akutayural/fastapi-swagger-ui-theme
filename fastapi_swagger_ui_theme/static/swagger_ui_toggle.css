@@ -1,0 +1,75 @@
+/* Icon-only theme toggle */
+#swagger-theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid rgba(17, 24, 39, 0.20);
+  background: rgba(17, 24, 39, 0.08);
+  color: rgba(17, 24, 39, 0.92);
+  cursor: pointer;
+  user-select: none;
+  padding: 0;
+  line-height: 0;
+}
+
+#swagger-theme-toggle:hover {
+  background: rgba(17, 24, 39, 0.12);
+  border-color: rgba(17, 24, 39, 0.30);
+}
+
+#swagger-theme-toggle:active {
+  transform: translateY(1px);
+}
+
+#swagger-theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: currentColor !important;
+}
+
+#swagger-theme-toggle svg path {
+  fill: currentColor !important;
+}
+
+/* Dark mode: glassy icon button (increase contrast on dark background) */
+html.docs-dark #swagger-theme-toggle,
+body.docs-dark #swagger-theme-toggle {
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #e5e7eb; /* almost-white but not pure white */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.28);
+}
+
+html.docs-dark #swagger-theme-toggle:hover,
+body.docs-dark #swagger-theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.30);
+  border-color: rgba(255, 255, 255, 0.60);
+}
+
+
+/* Place toggle in the header row (title area) on the far right */
+.swagger-ui .info hgroup.main {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 14px !important;
+  width: 100% !important;
+}
+
+/* Keep title group from shrinking too much */
+.swagger-ui .info hgroup.main .title,
+.swagger-ui .info hgroup.main .link {
+  flex: 0 1 auto;
+}
+
+/* Right-side slot for our toggle */
+.swagger-ui .info hgroup.main .swagger-ui-toggle-slot {
+  margin-left: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
