@@ -30,6 +30,12 @@ def setup_swagger_ui_theme(
     Mounts static assets and registers the themed Swagger UI endpoint.
     """
 
+    if not swagger_js_url or not swagger_css_url:
+        raise ValueError("swagger_js_url and swagger_css_url must be non-empty strings")
+
+    if not static_mount_path.startswith("/"):
+        raise ValueError("static_mount_path must start with '/'")
+
     # 1. Mount static files (idempotent)
     if not _has_mount(app, static_mount_path):
         _mount_swagger_ui_theme_static(app, static_mount_path)
