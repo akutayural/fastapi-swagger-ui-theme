@@ -1,20 +1,40 @@
 [project]
 name = "fastapi-swagger-ui-theme"
 version = "0.1.0"
-description = "Add your description here"
+description = "Dark/light theme toggle and readability improvements for FastAPI Swagger UI."
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = [
-    "fastapi>=0.110.0",
-    "uvicorn>=0.40.0",
+license = { text = "MIT" }
+authors = [{ name = "Ahmet Kutay Ural", email = "ahmetkutayural@gmail.com" }]
+keywords = ["fastapi", "swagger", "swagger-ui", "openapi", "theme", "docs"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Framework :: FastAPI",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Internet :: WWW/HTTP",
 ]
+
+dependencies = [
+    "fastapi>=0.128.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/akutayural/fastapi-swagger-ui-theme"
+Repository = "https://github.com/akutayural/fastapi-swagger-ui-theme"
+Issues = "https://github.com/akutayural/fastapi-swagger-ui-theme/issues"
 
 [dependency-groups]
 dev = [
     "pytest>=9.0.2",
     "ruff>=0.14.14",
+    "uvicorn>=0.30.0",
 ]
-
 
 [tool.setuptools]
 include-package-data = true

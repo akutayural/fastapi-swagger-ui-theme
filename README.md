@@ -1,4 +1,11 @@
 # fastapi-swagger-ui-theme
+[![PyPI version](https://img.shields.io/pypi/v/fastapi-swagger-ui-theme?cacheSeconds=300)](https://pypi.org/project/fastapi-swagger-ui-theme/)
+[![Downloads](https://pepy.tech/badge/fastapi-swagger-ui-theme)](https://pepy.tech/project/fastapi-swagger-ui-theme)
+[![Python Versions](https://img.shields.io/pypi/pyversions/fastapi-swagger-ui-theme.svg)](https://pypi.org/project/fastapi-swagger-ui-theme/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Ruff](https://img.shields.io/badge/linting-ruff-%23ea580c?logo=ruff&logoColor=white)](https://github.com/astral-sh/ruff)
+[![uv](https://img.shields.io/badge/packaging-uv-%234285F4?logo=python&logoColor=white)](https://github.com/astral-sh/uv)
+[![PyPI status](https://img.shields.io/pypi/status/fastapi-swagger-ui-theme?style=flat)](https://pypi.org/project/fastapi-swagger-ui-theme/)
 
 This package enhances the default Swagger UI by adding a persistent light/dark mode toggle, and better contrast.
 
